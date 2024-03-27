@@ -30,6 +30,7 @@ void DynamicArray::pushBack(int element) {
 int DynamicArray::getElementAt(int index) const {
     if (index < 0 || index >= size) {
         cout << "Index out of range";
+        return 0;
     }
     else {
         return array[index];
